@@ -88,6 +88,15 @@ Unbinding app my-app from service mydb in org my-org / space test as me@example.
 OK
 </pre>
 
+## <a id='service-keys'></a>Service Key ##
+Service Key is a service credentials for a particular service instance, it's a set of key value pairs, such as `password`, `username`, `url`, 
+and other such information are used to allow a service client to access and use a service.
+
+When user create a service instance and want to use the service instance out of CloudFoundry, user could create a service key for this service instance, 
+and use the key to retrieve the service credentials to use the service. The name of service key need be unique for a particular service instance.
+
+The detail CLI commands are in [Service Key](../services/service-keys.html) Section.
+
 ## <a id='delete'></a>Delete a Service Instance ##
 
 Deleting a service unprovisions the service instance and deletes *all data* along with the service instance.
